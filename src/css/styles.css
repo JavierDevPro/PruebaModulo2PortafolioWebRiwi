@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgb(26, 25, 25);
+}
+.parent-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 5fr 100px;
+
+    .header{
+        grid-row: 1;
+        grid-column: 1/13;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main {
+        grid-row: 1fr;
+        grid-column: 1/13;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 85vh;
+        gap: 24px;
+        margin: 24px;
+    }
+
+    .footer{
+        grid-row: 3;
+        grid-column: 1/13;
+        display: flex;
+    }
+}
+
+.personalAbout{
+    grid-row: 1;
+    grid-column: 1/2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 1px solid rgb(43, 40, 40);
+}
+
+.formalAbout{
+    grid-row: 1;
+    grid-column: 2/3;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 24px;
+    text-align: center;
+
+    .about{
+        grid-row: 1/4;
+        grid-column: 1/7;
+        width: 100%;
+    }
+
+    .formation{
+        grid-row: 4/6;
+        grid-column: 1/7;
+        width: 100%;
+    }
+
+    .photo{
+        grid-row: 1/4;
+        grid-column: 7/13;
+        width: 100%;
+    }
+
+    .technologies{
+        grid-row: 4/6;
+        grid-column: 7/13;
+        width: 100%;
+    }
+}
+
+.about, .formation, .technologies, .objetive, .aptitudes{
+    /* background-color: rgb(24, 23, 23); */
+    border-radius: 20px;
+    border: solid 1px rgb(43, 40, 40);
+    align-content: center;
+    width: 100%;
+}
