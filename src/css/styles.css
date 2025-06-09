@@ -72,6 +72,19 @@ nav{
 }
 
 .main{
+
+    #projects{
+        grid-row: 1/13;
+        grid-column: 1/13;
+    }
+
+    #contact{
+        grid-row: 1/13;
+        grid-column: 1/13;
+        display: flex;
+        flex-direction: column;
+    }
+
     @media (max-width:768px) {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(12, 1fr);
@@ -165,6 +178,7 @@ nav{
     }
 }
 
+/* ajustes basicos y generales para los siguientes contenedores internos */
 .about, .experience, .technologies{
     display: flex;
     border-radius: 20px;
@@ -200,6 +214,7 @@ nav{
     background-position: center;
 }
 
+/* ajuste para las imagenes contenidas pequeñas */
 .containedImage{
     min-width: 60px;
     max-width: 84px;

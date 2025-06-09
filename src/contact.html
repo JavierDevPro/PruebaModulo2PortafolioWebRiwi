@@ -19,6 +19,38 @@
         </nav>
     </header>
     <main class="main">
+        <!-- contenedor y seccion de inputs + labels que permitirian si se usa logica js el envio de informacion y contacto -->
+        <section id="contact">
+            <section>
+                <h1>
+                    Criterios de aceptación
+                </h1>
+                <p>
+                    colocar informacion de contacto
+                </p>
+                <p>
+                    Email: gnajsam@outlook.com
+                </p>
+                <p>
+                    Whatsapp: 3205665654
+                </p>
+                <p>
+                    Horario de arencion: lunes-viernes de 3PM-4PM
+                </p>
+            </section>
+            <form action="/send" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mesagge">Message:</label>
+                <textarea id="mesagge" name="mesagge" rows ="4" required></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </section>
     </main>
     <footer class="footer">
         <div>
