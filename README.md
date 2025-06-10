@@ -18,8 +18,7 @@ Esta pagina muestra mi informacion de contacto basica asi como un pequeño formu
 
 ### Ejecución
 
-1.  [Paso 1: Navega al directorio del proyecto (ej: `cd nombre_del_proyecto`)]
-2.  [Paso 2: Ejecuta el script principal (ej: `python main.py`)]
+1.  [Paso 1: Navega al directorio del proyecto (ej: `open with live server`)]
 
 ## Información del Coder
 
